@@ -21,11 +21,14 @@ def random_predict(number: int = 1) -> int:
     
     while True:
         count += 1
-        ans = (high+low)//2
-        if(ans>number):
-            high=ans-1
-        elif(ans<number):
-            low=ans+1
+        ans = (high + low)//2
+        
+        if(ans > number):
+            high = ans - 1
+            
+        elif(ans < number):
+            low = ans + 1
+            
         else:
             break
         
